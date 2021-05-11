@@ -1,0 +1,9 @@
+* /* Définition de la police de caractere sur la page */
+{
+    font-family: "Raleway", sans-serif;
+    src : url("Fonts/Raleway/static/Raleway-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+
+}
+
