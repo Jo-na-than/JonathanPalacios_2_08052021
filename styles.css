@@ -1,9 +1,293 @@
-* /* Définition de la police de caractere sur la page */
+/* DEFINITION DE LA POLICE */
+@font-face 
 {
-    font-family: "Raleway", sans-serif;
-    src : url("Fonts/Raleway/static/Raleway-Regular.ttf") format("truetype");
-    font-weight: normal;
+    font-family: "ralewayBold" ;
+    src: url("Fonts/Raleway/static/Raleway-Bold.ttf") format("truetype");
     font-style: normal;
-
+    font-weight: normal;
 }
 
+@font-face {
+    font-family: "ralewayRegular" ;
+    src: url("Fonts/Raleway/static/Raleway-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+h3 
+{
+    font-family: "ralewayRegular";
+    margin-top: auto;
+    margin-left: 3rem;
+}
+
+p
+{
+    font-family: "ralewayRegular";
+    margin-left: 3rem;
+}
+
+figure
+{
+    font-family: "ralewayRegular";
+    font-style: "normal";
+    font-size:"small";
+    font-weight: 100;
+}
+
+/*MISE EN PAGE HEADER*/
+
+.logo
+{
+    width: auto;
+    margin-top: 5px;
+    margin-left: 4.5rem;
+}
+
+.head
+{
+    font-family: "ralewayRegular";
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding-top: 15px;
+    width: 98%;
+}
+
+.inscription
+{
+  font-family: "ralewayBold";
+  color:#0065fc;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+    margin-right: 3rem;
+} 
+
+nav a:hover{
+    color: #0065fc;
+    border-top: 2px solid #0065fc;
+}
+
+/* MISE EN PAGE BARRE DE RECHERCHE + FILTRES*/
+
+#iconePosition
+{
+   border: 1px;
+   border-radius: 10px 0px 0px 10px;
+   background-color: #F2F2F2;
+   margin-left: 3rem;
+   padding: 12px;
+}
+
+
+#ville
+{
+    background-color:white;
+    border: 1px solid #ccc6c6;
+    border-radius: 0px 0px 0px 0px;
+    width: 200px;
+    height: 40.5px;
+    color: white;
+    margin-bottom: 30px;
+    margin-top: -20px;
+    margin-left: -0.25rem;
+    padding: 12px;
+}
+
+::placeholder
+{
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.recherche button
+{
+    background-color: #0065fc;
+    border: 1px solid #ccc6c6;
+    border-radius: 0px 10px 10px 0px;
+    width: 130px;
+    height: 40.5px;
+    color: white;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    margin-left: -0.5rem;
+    font-family: "ralewayRegular";
+    font-weight: bold;
+}
+
+.rechercheFiltres
+{
+    padding: 3rem;
+    
+}
+
+#iconeEconomique
+{
+    border: 1px;
+    border-radius: 50%;
+    background-color: #deebff;
+    color: #0065fc;
+    margin-left: 1.5rem;
+    padding: 15px;
+}
+
+#iconeFamille
+{
+    border: 1px;
+    border-radius: 50%;
+    background-color: #deebff;
+    color: #0065fc;
+    margin-left: 1.5rem;
+    padding: 15px;
+}
+
+#iconeRomantique
+{
+    border: 1px;
+    border-radius: 50%;
+    background-color: #deebff;
+    color: #0065fc;
+    margin-left: 1.5rem;
+    padding: 15px;
+}
+
+#iconeAnimaux
+{
+    border: 1px;
+    border-radius: 50%;
+    background-color: #deebff;
+    color: #0065fc;
+    margin-left: 1.5rem;
+    padding: 15px;
+}
+
+#infoLogementDispo
+{
+    
+    color: #0065fc;
+    margin-left: 1.5rem;
+    padding: 15px;
+}
+
+.figure /* info dispo logement*/
+{
+    display: flex;
+    width: auto;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+
+.filtres
+{
+    
+    border: 1px solid #ccc6c6;
+    border-radius: 50px;
+    background-color: white;
+    width: 10%;
+    height: auto;
+    
+}
+
+/* MISE EN PAGE BODY*/
+
+main
+{
+    padding: 3rem;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding-top: 15px;
+    flex-wrap: wrap;
+}
+
+.hebergement
+{
+    background-color: #F2F2F2;
+    border: 1px solid #F2F2F2;
+    border-radius: 10px ;
+    width: 70%;
+    margin-right: 20px;
+    padding-top: 40px;
+     
+}
+
+.lesPlusPopulaires
+{
+    background-color: #F2F2F2;
+    border: 1px solid #F2F2F2;
+    border-radius: 10px ;
+    width: 25%;
+    margin-right: 20px;
+    padding-top: 40px;
+}
+
+.ongletsHotels
+{
+    border: 1px solid #f2f2f2;
+    border-radius: 20px;
+    background-color: white;
+    padding: 5px;
+    margin-left: 50px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+    width: 25%;
+    flex-wrap: wrap;   
+}
+
+.ongletHotelPopulaire
+{
+    border: 1px solid #f2f2f2;
+    border-radius: 20px;
+    background-color: white;
+    padding: 5px;
+    margin-right: 0px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+    width:65%;
+    flex-wrap: wrap;
+}
+
+.activitésAMarseille
+{ 
+    background-color: white;
+    padding: 5px;
+    margin-left: -20px;
+    width:55%;
+    flex-wrap: wrap;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* MISE EN PAGE FOOTER */
+
+footer
+{
+    padding-left: 30px;
+    max-width: 100%;
+    margin-top: 40px;
+    background-color: #f2f2f2;
+    border: 1px; 
+}
+
+ul 
+{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 3rem;
+}
