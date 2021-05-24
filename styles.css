@@ -151,7 +151,7 @@ nav a:hover{
 {
     font-family: "ralewayBold";
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
     width: 100%;
     padding: 15px;
@@ -161,20 +161,17 @@ nav a:hover{
 {
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
     font-weight: normal;
     border: 1px solid #ccc6c6;
     border-radius: 50px;
     background-color: white;
     height: 15%; 
     width: 10%;
-    margin-left: -25rem;
     align-items: center;
 }
 
-.filtres p
-{
-    margin-left: 1rem;
-}
 
 .nomFiltres
 {
@@ -183,15 +180,19 @@ nav a:hover{
     align-items: center;
     font-family: "ralewayBold";
     text-align: center;
-
 }
 
 .infoLogementDispo
 {
     display:flex;
     flex-direction: wrap;
-    align-content: flex-start;
     color: #0065fc;
+    margin-left: 5rem;
+}
+
+figcaption
+{
+    color: black;
 }
 
 
