@@ -1,4 +1,4 @@
-/* DEFINITION DE LA POLICE */
+/* DEFINITION DE LA POLICE*/
 @font-face 
 {
     font-family: "ralewayBold" ;
@@ -27,13 +27,25 @@ p
     margin-left: 3rem;
 }
 
+label
+{
+    font-family: "ralewayBold";
+    font-weight: bold;
+    margin-left: 3rem;
+}
+
 figure
 {
     font-family: "ralewayRegular";
-    font-style: "normal";
-    font-size:"small";
     font-weight: 100;
 }
+
+a
+{
+    font-family: "ralewayRegular";
+    margin-left: 3rem;
+}
+
 
 /*MISE EN PAGE HEADER*/
 
@@ -41,7 +53,7 @@ figure
 {
     width: auto;
     margin-top: 5px;
-    margin-left: 4.5rem;
+    margin-left: 3rem;
 }
 
 .head
@@ -120,90 +132,79 @@ nav a:hover{
     font-weight: bold;
 }
 
-.rechercheFiltres
+.filtresTitre label
 {
-    padding: 3rem;
-    
+    padding-top: 15px;
 }
 
-#iconeEconomique
+.filtres i
 {
-    border: 1px;
+    border:1px solid #deebff ;
     border-radius: 50%;
     background-color: #deebff;
-    color: #0065fc;
-    margin-left: 1.5rem;
-    padding: 15px;
+    color:#0065FC;
+    padding:20px;
+    height:30%;
 }
 
-#iconeFamille
+.filtresTitre
 {
-    border: 1px;
-    border-radius: 50%;
-    background-color: #deebff;
-    color: #0065fc;
-    margin-left: 1.5rem;
-    padding: 15px;
-}
-
-#iconeRomantique
-{
-    border: 1px;
-    border-radius: 50%;
-    background-color: #deebff;
-    color: #0065fc;
-    margin-left: 1.5rem;
-    padding: 15px;
-}
-
-#iconeAnimaux
-{
-    border: 1px;
-    border-radius: 50%;
-    background-color: #deebff;
-    color: #0065fc;
-    margin-left: 1.5rem;
-    padding: 15px;
-}
-
-#infoLogementDispo
-{
-    
-    color: #0065fc;
-    margin-left: 1.5rem;
-    padding: 15px;
-}
-
-.figure /* info dispo logement*/
-{
+    font-family: "ralewayBold";
     display: flex;
-    width: auto;
-    margin: auto;
-    margin-bottom: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    padding: 15px;
 }
-
 
 .filtres
 {
-    
+    display: flex;
+    flex-direction: row;
+    font-weight: normal;
     border: 1px solid #ccc6c6;
     border-radius: 50px;
     background-color: white;
+    height: 15%; 
     width: 10%;
-    height: auto;
-    
+    margin-left: -25rem;
+    align-items: center;
 }
+
+.filtres p
+{
+    margin-left: 1rem;
+}
+
+.nomFiltres
+{
+    margin : auto;
+    display: flex;
+    align-items: center;
+    font-family: "ralewayBold";
+    text-align: center;
+
+}
+
+.infoLogementDispo
+{
+    display:flex;
+    flex-direction: wrap;
+    align-content: flex-start;
+    color: #0065fc;
+}
+
+
 
 /* MISE EN PAGE BODY*/
 
 main
-{
-    padding: 3rem;
-    display: flex;
+{   display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 3rem;
     margin-bottom: 10px;
     padding-top: 15px;
-    flex-wrap: wrap;
 }
 
 .hebergement
@@ -214,7 +215,6 @@ main
     width: 70%;
     margin-right: 20px;
     padding-top: 40px;
-     
 }
 
 .lesPlusPopulaires
@@ -245,13 +245,13 @@ main
     border-radius: 20px;
     background-color: white;
     padding: 5px;
-    margin-right: 0px;
+    margin-left: 4.5rem;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
     width:65%;
     flex-wrap: wrap;
 }
 
-.activitésAMarseille
+.activitesAMarseille
 { 
     background-color: white;
     padding: 5px;
@@ -289,5 +289,6 @@ ul
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    font-family: "ralewayRegular";
     padding: 3rem;
 }
