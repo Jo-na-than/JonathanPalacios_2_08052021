@@ -14,37 +14,24 @@
     font-weight: normal;
 }
 
-h3 
+* 
 {
-    font-family: "ralewayRegular";
-    margin-top: auto;
-    margin-left: 3rem;
+    text-decoration: none;
 }
 
-p
+.evaluation
 {
-    font-family: "ralewayRegular";
-    margin-left: 3rem;
+    font-size: 1em;
+    color: #0065fc;
 }
 
-label
+.evaluation1
 {
-    font-family: "ralewayBold";
-    font-weight: bold;
-    margin-left: 3rem;
+    font-size: 1em;
+    color:#ccc6c6;
 }
 
-figure
-{
-    font-family: "ralewayRegular";
-    font-weight: 100;
-}
 
-a
-{
-    font-family: "ralewayRegular";
-    margin-left: 3rem;
-}
 
 
 /*MISE EN PAGE HEADER*/
@@ -86,6 +73,18 @@ nav a:hover{
 
 /* MISE EN PAGE BARRE DE RECHERCHE + FILTRES*/
 
+.rechercheFiltres h3
+{
+    font-family: "ralewayRegular";
+    margin-left: 3rem;
+}
+
+.rechercheFiltres p
+{
+ font-family: "ralewayRegular";
+ margin-left: 3rem;
+}
+
 #iconePosition
 {
    border: 1px;
@@ -107,14 +106,14 @@ nav a:hover{
     margin-bottom: 30px;
     margin-top: -20px;
     margin-left: -0.25rem;
-    padding: 12px;
+    padding: 15px;
 }
 
 ::placeholder
 {
     color: black;
-    font-weight: bold;
-    padding: 10px;
+    font-family: "ralewayBold";
+    padding: 15px;
 }
 
 .recherche button
@@ -128,13 +127,14 @@ nav a:hover{
     margin-bottom: 30px;
     margin-top: 20px;
     margin-left: -0.5rem;
-    font-family: "ralewayRegular";
-    font-weight: bold;
+    font-family: "ralewayBold";
+    
 }
 
 .filtresTitre label
 {
     padding-top: 15px;
+    margin-left: 3rem;
 }
 
 .filtres i
@@ -143,7 +143,7 @@ nav a:hover{
     border-radius: 50%;
     background-color: #deebff;
     color:#0065FC;
-    padding:20px;
+    padding:10px;
     height:30%;
 }
 
@@ -152,8 +152,7 @@ nav a:hover{
     font-family: "ralewayBold";
     display: flex;
     flex-wrap: nowrap;
-    justify-content: space-between;
-    width: 100%;
+    width: 50%;
     padding: 15px;
 }
 
@@ -161,17 +160,14 @@ nav a:hover{
 {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    flex-wrap: nowrap;
-    font-weight: normal;
     border: 1px solid #ccc6c6;
     border-radius: 50px;
     background-color: white;
     height: 15%; 
-    width: 10%;
+    width: 50%;
     align-items: center;
+    margin-left: 3rem;
 }
-
 
 .nomFiltres
 {
@@ -185,7 +181,6 @@ nav a:hover{
 .infoLogementDispo
 {
     display:flex;
-    flex-direction: wrap;
     color: #0065fc;
     margin-left: 5rem;
 }
@@ -193,19 +188,19 @@ nav a:hover{
 figcaption
 {
     color: black;
+    margin-left: 1rem;
+    font-family: "ralewayRegular";
 }
-
-
 
 /* MISE EN PAGE BODY*/
 
 main
 {   display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
     padding: 3rem;
     margin-bottom: 10px;
     padding-top: 15px;
+    
 }
 
 .hebergement
@@ -214,8 +209,59 @@ main
     border: 1px solid #F2F2F2;
     border-radius: 10px ;
     width: 70%;
-    margin-right: 20px;
+    height: 170%;
+    margin-right: 3rem;
     padding-top: 40px;
+}
+
+.hebergement h3
+{
+    font-family: "ralewayRegular";
+    color: black;
+    margin-left: 3rem;
+    margin-top: -1rem;
+}
+
+.hebergement p
+{
+    font-family:"ralewayRegular";
+    color: black;
+}
+
+.hebergementMarseille
+{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.strong
+{
+    font-family: "ralewayBold";
+}
+
+.ongletsHotels img
+{
+    width: 320px;
+    height: 150px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.ongletsHotels
+{
+    border: 1px solid #f2f2f2;
+    border-radius: 20px;
+    background-color: white;
+    padding: 5px;
+    margin-left: 4rem;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+    width: auto;
+    font-family: "ralewayRegular";    
+}
+
+.ongletsHotels h3
+{
+    margin-left: 0rem;
+    margin-top: 1rem;
 }
 
 .lesPlusPopulaires
@@ -225,19 +271,7 @@ main
     border-radius: 10px ;
     width: 25%;
     margin-right: 20px;
-    padding-top: 40px;
-}
-
-.ongletsHotels
-{
-    border: 1px solid #f2f2f2;
-    border-radius: 20px;
-    background-color: white;
-    padding: 5px;
-    margin-left: 50px;
-    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
-    width: 25%;
-    flex-wrap: wrap;   
+    padding-top: 10px;
 }
 
 .ongletHotelPopulaire
@@ -252,14 +286,13 @@ main
     flex-wrap: wrap;
 }
 
+
 .activitesAMarseille
 { 
     background-color: white;
     padding: 5px;
     margin-left: -20px;
     width:55%;
-    flex-wrap: wrap;
-    
 }
 
 
@@ -273,7 +306,7 @@ main
 
 
 
-/* MISE EN PAGE FOOTER */
+/* MISE EN PAGE FOOTER (finie) */
 
 footer
 {
@@ -282,14 +315,20 @@ footer
     margin-top: 40px;
     background-color: #f2f2f2;
     border: 1px; 
-}
-
-ul 
-{
-    list-style-type: none;
     display: flex;
     justify-content: space-between;
-    flex-direction: column;
     font-family: "ralewayRegular";
     padding: 3rem;
 }
+
+footer h3
+{
+    margin-top: -1rem;
+    margin-left: 2.5rem;
+} 
+
+ul 
+{
+    list-style-type: none; 
+    line-height: 2em;
+}  
