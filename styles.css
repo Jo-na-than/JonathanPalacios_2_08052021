@@ -67,12 +67,12 @@ header
     background: white;
 }
   
-.navbar #navbar-link-accomodation > .underline-effect
+.navbar #navbar-link-accomodation > .underline-effect /* SELECTION DES ENFANTS DIRECT */
 {
     background: #0065fc;
 }
   
-.navbar #navbar-link-activities:hover > .underline-effect 
+.navbar #navbar-link-activities:hover > .underline-effect /* SELECTION DES ENFANTS DIRECT */
 {
     background: #0065fc;
 }
@@ -139,7 +139,7 @@ header
  
 
   
-main 
+main /* DEFINITION DE LA TAILLE ET DE LA MARGE */
 {
     width: 98%;
     max-width: 1440px;
@@ -157,11 +157,11 @@ main
     margin: 6px 0px;
 }
   
-.research-box 
+.research-box /* REGLAGE DE LA BARRE DE RECHERCHE*/
 {
     display: inline-flex;
     flex-direction: row;
-    margin-top: 15px;
+    margin-top: 25px;
     margin-bottom: 35px;
 }
   
@@ -216,12 +216,12 @@ main
     transition: ease 0.3s;
 }
   
-#icon-glass 
+#icon-glass /* icone loupe lors du responsive design*/
 {
     display: none;
 }
   
-.filters h3 
+.filters h3 /* mise en page filtres*/
 {
     font-size: 24px;
     display: inline;
@@ -283,7 +283,7 @@ main
     display: inline;
 }
   
-.blocs 
+.blocs /* mise en page section hebergement à marseille*/
 {
     display: grid;
     grid-template-columns: 1.9fr 1fr;
@@ -349,7 +349,7 @@ main
     transition: ease 0.4s;
 }
   
-.marseille-case > .marseille-case-img 
+.marseille-case > .marseille-case-img /* SELECTION DES ENFANTS DIRECT */
 {
     width: 250px;
     height: 100px;
@@ -386,7 +386,7 @@ main
     margin: 3px 0 3px 0;
 }
   
-.most-populars 
+.most-populars /* mise en page les plus populaires*/
 {
     display: grid;
     grid-template-columns: 1fr;
@@ -520,7 +520,7 @@ main
     font-weight: bold;
 }
   
-.marseille-activities 
+.marseille-activities /* mise en page activité à marseille*/
 {
     height: 550px;
     margin-bottom: 50px;
@@ -657,7 +657,7 @@ main
     margin-right: 20%;
 }
   
-/* Media Queries */
+/* Media Queries Responsives Design*/
 
 @media screen and (max-width: 1440px)
 {
