@@ -148,7 +148,8 @@ main /* DEFINITION DE LA TAILLE ET DE LA MARGE */
   
 .title-h1 
 {
-    font-size: 32px;
+    font-family: "RalewayBold";
+    font-size: 20px;
     margin: 10px 0;
 }
   
@@ -193,7 +194,8 @@ main /* DEFINITION DE LA TAILLE ET DE LA MARGE */
   
 .research-bar::placeholder 
 {
-    color: rgb(170, 170, 170);
+    color: black;
+    font-family: "RalewayBold";
     font-size: 16px;
     font-weight: 600;
 }
@@ -223,12 +225,14 @@ main /* DEFINITION DE LA TAILLE ET DE LA MARGE */
   
 .filters h3 /* mise en page filtres*/
 {
+    font-family:"RalewayBold";
     font-size: 24px;
     display: inline;
 }
   
 .filters ul 
 {
+    font-family: "RalewayBold";
     display: inline-flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -308,6 +312,7 @@ main /* DEFINITION DE LA TAILLE ET DE LA MARGE */
   
 .bloc-accomodation .push-to-right 
 {
+    font-family:"RalewayBold";
     display: block;
     width: 100%;
     margin-left: 40px;
@@ -374,6 +379,7 @@ main /* DEFINITION DE LA TAILLE ET DE LA MARGE */
 .marseille-case .case-text .hotel-name 
 {
     margin: 0;
+    font-family: "RalewayBold";
 }
   
 .marseille-case .case-text .most-popular-price-and-stars 
@@ -402,6 +408,7 @@ main /* DEFINITION DE LA TAILLE ET DE LA MARGE */
     align-items: flex-start;
     justify-content: space-between;
     margin: 0;
+    font-family:"RalewayBold";
 }
   
 .most-populars .title-h2-and-icon h2 
@@ -659,7 +666,7 @@ main /* DEFINITION DE LA TAILLE ET DE LA MARGE */
   
 /* Media Queries Responsives Design*/
 
-@media screen and (max-width: 1440px)
+@media screen and (max-width: 1440px) /* ecran tablette style iPad Pro 12.9"*/
 {
     .blocs 
     {
@@ -753,9 +760,9 @@ main /* DEFINITION DE LA TAILLE ET DE LA MARGE */
           grid-template-columns: 1fr 1fr 1fr;
           grid-template-rows: 1fr 1fr;
           grid-template-areas: 
-    "activity-1 activity-2 activity-4"
-    "activity-5 activity-3 activity-6";
-    margin-bottom: 100px;
+          "activity-1 activity-2 activity-4"
+          "activity-5 activity-3 activity-6";
+           margin-bottom: 100px;
     }
   
     .activity__full-card 
@@ -852,9 +859,9 @@ main /* DEFINITION DE LA TAILLE ET DE LA MARGE */
       grid-template-rows: repeat(3, 1fr);
       margin-bottom: 370px;
       grid-template-areas: 
-    "activity-1 activity-2"
-    "activity-4 activity-3"
-    "activity-5 activity-6";
+      "activity-1 activity-2"
+      "activity-4 activity-3"
+      "activity-5 activity-6";
     }
 }
   
