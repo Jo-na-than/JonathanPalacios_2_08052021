@@ -13,7 +13,7 @@
     src: url('Fonts/Raleway/static/Raleway-Bold.ttf') format('truetype');
 }
 
-/* MISE EN PAGE HEADER RECHERCHE & FILTRES*/
+/* MISE EN PAGE HEADER RECHERCHE & FILTRES */
 
 body 
 {
@@ -34,7 +34,29 @@ header
     margin: auto;
 }
   
+.navbar img /* Préparation du Grid Nav */
+{
+    grid-area: logo;
+}
   
+.navbar #navbar-link-accomodation 
+{
+    grid-area: accomodation;
+}
+
+.navbar #navbar-link-activities 
+{
+    grid-area: activities;
+    color: black;
+}
+
+.navbar #navbar-link-sign-up 
+{
+    grid-area: sign-up;
+    color: #0065fc;
+    font-weight: 600;
+}
+    
   
 .navbar 
 {
@@ -48,7 +70,7 @@ header
   
 #logo 
 {
-    padding: 0;
+    padding: 0; /* supprime la marge interne  du logo*/
 }
   
 .navbar .navbar-link 
@@ -94,25 +116,9 @@ header
     color: #0065fc;
 }
   
-.navbar img 
-{
-    grid-area: logo;
-}
-  
-.navbar #navbar-link-accomodation 
-{
-    grid-area: accomodation;
-}
-  
 #navbar-link-accomodation a 
 {
     color: #0065fc;
-}
-  
-.navbar #navbar-link-activities 
-{
-    grid-area: activities;
-    color: black;
 }
   
 .navbar #navbar-link-activities a 
@@ -124,20 +130,11 @@ header
 {
     color: #0065fc;
 }
-  
-.navbar #navbar-link-sign-up 
-{
-    grid-area: sign-up;
-    color: #0065fc;
-    font-weight: 600;
-}
-  
+   
 .navbar .active-link 
 {
     color: #0065fc;
 }
- 
-
   
 main /* DEFINITION DE LA TAILLE ET DE LA MARGE */
 {
@@ -160,7 +157,7 @@ main /* DEFINITION DE LA TAILLE ET DE LA MARGE */
   
 .research-box /* REGLAGE DE LA BARRE DE RECHERCHE*/
 {
-    display: inline-flex;
+    display: inline-flex; /* alignement des differents items de la barre de recherche */
     flex-direction: row;
     margin-top: 25px;
     margin-bottom: 35px;
@@ -391,6 +388,13 @@ main /* DEFINITION DE LA TAILLE ET DE LA MARGE */
 {
     margin: 3px 0 3px 0;
 }
+
+.show-more a 
+{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
   
 .most-populars /* mise en page les plus populaires*/
 {
@@ -469,7 +473,7 @@ main /* DEFINITION DE LA TAILLE ET DE LA MARGE */
     margin: 0;
 }
   
-.most-popular .case-text .hotel-price
+.most-popular .case-text .hotel-price /* ajustement des onglet hotel populaire dans l'aside */
 {
     margin-top: 0;
     margin-bottom: 0;
@@ -519,12 +523,35 @@ main /* DEFINITION DE LA TAILLE ET DE LA MARGE */
 {
     color: #D9D9D9;
 }
-  
-.show-more a 
+
+#activity-1 /* Préparation Grid section Activité */
 {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
+    grid-area: activity-1;
+}
+
+#activity-2 
+{
+    grid-area: activity-2;  
+}
+
+#activity-3 
+{
+    grid-area: activity-3;
+}
+
+#activity-4 
+{
+    grid-area: activity-4;
+}
+
+#activity-5 
+{
+    grid-area: activity-5;
+}
+
+#activity-6 
+{
+    grid-area: activity-6;
 }
   
 .marseille-activities /* mise en page activité à marseille*/
@@ -565,7 +592,7 @@ main /* DEFINITION DE LA TAILLE ET DE LA MARGE */
 .marseille-activities .card__title 
 {
     position: absolute;
-    width: 95%;
+    width: 95.25%; /* ajustement de la partie blanche titre activité */
     background-color: white;
     border-radius: 0 0 20px 20px;
     padding: 20px 0 20px 5%;
@@ -579,41 +606,21 @@ main /* DEFINITION DE LA TAILLE ET DE LA MARGE */
     margin: 0;
 }
   
-#activity-1 
-{
-    grid-area: activity-1;
-}
-
-#activity-2 
-{
-    grid-area: activity-2;  
-}
-
-#activity-3 
-{
-    grid-area: activity-3;
-}
-
-#activity-4 
-{
-    grid-area: activity-4;
-}
-
-#activity-5 
-{
-    grid-area: activity-5;
-}
-
-#activity-6 
-{
-    grid-area: activity-6;
-}
-  
 .marseille-activities .activity__full-card:hover
 {
     cursor: pointer;
     transform: scale(1.03);
     transition: ease 0.4s;
+}
+
+#title-activities
+{
+    font-family:"RalewayBold";
+}
+
+.card__title
+{
+    font-family:"RalewayBold";
 }
   
 /* Footer */
@@ -742,7 +749,6 @@ main /* DEFINITION DE LA TAILLE ET DE LA MARGE */
     
     .most-popular-case-img 
     {
-      margin: 0;
       width: 30%;
       height: 100%;
       background-size: cover;
@@ -807,7 +813,7 @@ main /* DEFINITION DE LA TAILLE ET DE LA MARGE */
     }
 }
   
-  
+
   
 @media screen and (max-width: 1200px) 
 {
