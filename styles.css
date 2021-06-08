@@ -673,7 +673,7 @@ main /* DEFINITION DE LA TAILLE ET DE LA MARGE */
   
 /* Media Queries Responsives Design*/
 
-@media screen and (max-width: 1440px) /* ecran tablette style iPad Pro 12.9"*/
+@media screen and (max-width: 1440px) 
 {
     .blocs 
     {
@@ -714,7 +714,7 @@ main /* DEFINITION DE LA TAILLE ET DE LA MARGE */
       grid-template-rows: 1fr 3fr;
       column-gap: 25px;
       height: 200px;
-      width: 100%;
+      width: 95%; /* ajustement marge */
     }
   
     .most-populars a 
@@ -819,7 +819,7 @@ main /* DEFINITION DE LA TAILLE ET DE LA MARGE */
 {
     main 
     {
-      width: 95%;
+      width: 95%; /* ajustement marge */
     }
 }
   
@@ -827,7 +827,7 @@ main /* DEFINITION DE LA TAILLE ET DE LA MARGE */
 {
     main 
     {
-      width: 100%;
+      width: 92%; /* ajustement marge */
     }
     
     .marseille-cases 
@@ -901,13 +901,13 @@ main /* DEFINITION DE LA TAILLE ET DE LA MARGE */
       grid-area: logo;
     }
     
-    .navbar #navbar-link-accomodation 
+    .navbar #navbar-link-accomodation /* effet de survol inversé nav header */
     {
       flex-direction: column-reverse;
       grid-area: navbar-link-accomodation;
     }
     
-    .navbar #navbar-link-activities 
+    .navbar #navbar-link-activities /* effet de survol inversé nav header */
     {
       flex-direction: column-reverse;
       grid-area: navbar-link-activities;
@@ -991,7 +991,7 @@ main /* DEFINITION DE LA TAILLE ET DE LA MARGE */
     }
 }   
   
-@media screen and (max-width: 480px) 
+@media screen and (max-width: 480px) /* Smartphone */
 {
     .research-box 
     {
@@ -1035,7 +1035,7 @@ main /* DEFINITION DE LA TAILLE ET DE LA MARGE */
     }
 }
   
-@media screen and (max-width: 360px) 
+@media screen and (max-width: 360px) /* Samsung Galaxy S5 */
 {
     .most-popular-case-img img 
     {
