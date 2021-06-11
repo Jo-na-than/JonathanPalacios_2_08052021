@@ -817,229 +817,229 @@ main /* DEFINITION DE LA TAILLE ET DE LA MARGE */
   
 @media screen and (max-width: 1200px) 
 {
-    main 
-    {
-      width: 95%; /* ajustement marge */
-    }
+  main 
+  {
+    width: 95%; /* ajustement marge */
+  }
 }
   
 @media screen and (max-width: 900px) 
 {
-    main 
-    {
-      width: 92%; /* ajustement marge */
-    }
+  main 
+  {
+    width: 92%; /* ajustement marge */
+  }
     
-    .marseille-cases 
-    {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr;
-    }
+  .marseille-cases 
+  {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
     
-    .bloc-most-popular 
-    {
-      display: flex;
-      justify-content: center;
-      align-items: stretch;
-      height: 560px;
-    }
+  .bloc-most-popular 
+  {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    height: 560px;
+  }
     
-    .bloc-most-popular .most-populars 
-    {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr;
-      padding-top: 25px;
-    }
+  .bloc-most-popular .most-populars 
+  {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    padding-top: 25px;
+  }
     
-    .bloc-most-popular .most-populars .most-popular 
-    {
-      height: 120px;
-    }
+  .bloc-most-popular .most-populars .most-popular 
+  {
+    height: 120px;
+  }
     
-    .marseille-activities 
-    {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(3, 1fr);
-      margin-bottom: 370px;
-      grid-template-areas: 
-      "activity-1 activity-2"
-      "activity-4 activity-3"
-      "activity-5 activity-6";
-    }
+  .marseille-activities 
+  {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    margin-bottom: 370px;
+    grid-template-areas: 
+    "activity-1 activity-2"
+    "activity-4 activity-3"
+    "activity-5 activity-6";
+  }
 }
   
 @media screen and (max-width: 600px) 
 {
-    .blocs 
-    {
-      display: grid;
-      grid-template-rows: 1fr auto;
-    }
+  .blocs 
+  {
+    display: grid;
+    grid-template-rows: 1fr auto;
+  }
+   
+  .marseille-cases 
+  {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
     
-    .marseille-cases 
-    {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    }
+  .navbar 
+  {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "logo navbar-link-sign-up"
+    "navbar-link-accomodation navbar-link-activities";
+  }
     
-    .navbar 
-    {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
-      grid-template-areas:
-      "logo navbar-link-sign-up"
-      "navbar-link-accomodation navbar-link-activities";
-    }
+  .navbar img 
+  {
+    grid-area: logo;
+  }
     
-    .navbar img 
-    {
-      grid-area: logo;
-    }
+  .navbar #navbar-link-accomodation /* effet de survol inversé nav header */
+  {
+    flex-direction: column-reverse;
+    grid-area: navbar-link-accomodation;
+  }
     
-    .navbar #navbar-link-accomodation /* effet de survol inversé nav header */
-    {
-      flex-direction: column-reverse;
-      grid-area: navbar-link-accomodation;
-    }
-    
-    .navbar #navbar-link-activities /* effet de survol inversé nav header */
-    {
-      flex-direction: column-reverse;
-      grid-area: navbar-link-activities;
-    }
+  .navbar #navbar-link-activities /* effet de survol inversé nav header */
+  {
+    flex-direction: column-reverse;
+    grid-area: navbar-link-activities;
+  }
 
-    .navbar #navbar-link-activities .underline-effect 
-    {
-      background-color: #dbdbdb;
-    }
-    
-    .navbar #navbar-link-sign-up 
-    {
-      display: flex;
-      justify-content: flex-end;
-      grid-area: navbar-link-sign-up;
-    }
+  .navbar #navbar-link-activities .underline-effect 
+  {
+    background-color: #dbdbdb;
+  }
   
-    .research-box 
-    {
-      position: relative;
-    }
+  .navbar #navbar-link-sign-up 
+  {
+    display: flex;
+    justify-content: flex-end;
+    grid-area: navbar-link-sign-up;
+  }
   
-    .research-bar 
-    {
-      width: 300px;
-      height: 49px;
-    }
+  .research-box 
+  {
+    position: relative;
+  }
+  
+  .research-bar 
+  {
+    width: 300px;
+    height: 49px;
+  }
+   
+  #button-research 
+  {
+    display: none;
+  }
+   
+  #icon-glass /* icone loupe responsive */
+  {
+    display: block;
+    position: absolute;
+    right: -20px;
+    border-radius: 15px;
+  }
     
-    #button-research 
-    {
-      display: none;
-    }
+  .most-popular-case-img img 
+  {
+    min-width: 145px;
+  }
     
-    #icon-glass 
-    {
-      display: block;
-      position: absolute;
-      right: -20px;
-      border-radius: 15px;
-    }
+  .marseille-activities 
+  {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas:
+    "activity-1"
+    "activity-2"
+    "activity-3"
+    "activity-4"
+    "activity-5"
+    "activity-6";
+    height: 1500px;
+    margin-bottom: 350px;
+  }
     
-    .most-popular-case-img img 
-    {
-      min-width: 145px;
-    }
+  .footer-blocs 
+  {
+    display: inline-flex;
+    flex-direction: column;
+  }
     
-    .marseille-activities 
-    {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: repeat(6, 1fr);
-      grid-template-areas:
-      "activity-1"
-      "activity-2"
-      "activity-3"
-      "activity-4"
-      "activity-5"
-      "activity-6";
-      height: 1500px;
-      margin-bottom: 350px;
-    }
-    
-    .footer-blocs 
-    {
-      display: inline-flex;
-      flex-direction: column;
-    }
-    
-    .footer-blocs .footer-bloc 
-    {
-      padding: 10px 20px;
-    }
+  .footer-blocs .footer-bloc 
+  {
+    padding: 10px 20px;
+  }
 }
   
 @media screen and (max-width: 550px) 
 {
-    .most-popular-case-img img 
-    {
-      min-width: 125px;
-      max-width: 125px;
-    }
+  .most-popular-case-img img 
+  {
+    min-width: 125px;
+    max-width: 125px;
+  }
 }   
   
 @media screen and (max-width: 480px) /* Smartphone */
 {
-    .research-box 
-    {
-      width: 80%;
-    }
+  .research-box 
+  {
+    width: 80%;
+  }
     
-    .filters ul li 
-    {
-      padding: 0 12px 0 0;
-      margin-left: 5px;
-    }
+  .filters ul li 
+  {
+    padding: 0 12px 0 0;
+    margin-left: 5px;
+  }
   
-    .bloc 
-    {
-      border-radius: 0;
-    }
+  .bloc 
+  {
+    border-radius: 0;
+  }
   
-    .bloc-accomodation 
-    {
-      background: white;
-      margin-left: -15px;
-    }
+  .bloc-accomodation 
+  {
+    background: white;
+    margin-left: -15px;
+  }
   
-    .bloc-most-popular 
-    {
-      margin-left: -12px;
-      padding-right: 24px;
-      width: 100%;
-    }
+  .bloc-most-popular 
+  {
+    margin-left: -12px;
+    padding-right: 24px;
+    width: 100%;
+  }
     
-    .most-popular-case-img img 
-    {
-      min-width: 100px;
-      max-width: 100px;
-    }
+  .most-popular-case-img img 
+  {
+    min-width: 100px;
+    max-width: 100px;
+  }
   
   
-    .push-to-right 
-    {
-      margin-left: 0 !important;
-    }
+  .push-to-right 
+  {
+    margin-left: 0 !important;
+  }
 }
   
 @media screen and (max-width: 360px) /* Samsung Galaxy S5 */
 {
-    .most-popular-case-img img 
-    {
-      min-width: 80px;
-      max-width: 80px;
-    }
+  .most-popular-case-img img 
+  {
+    min-width: 80px;
+    max-width: 80px;
+  }
 }
